@@ -1,0 +1,16 @@
+{
+    "name": "etienne/quete_simple_mvc",
+    "authors": [
+        {
+            "name": "Etienne Walch",
+            "email": "tinouclt@gmail.com"
+        }
+    ],
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
+}

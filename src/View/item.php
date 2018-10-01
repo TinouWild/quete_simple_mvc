@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head> ... </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple-MVC</title>
+</head>
 <body>
 <section>
     <h1>Items</h1>
