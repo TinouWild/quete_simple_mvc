@@ -7,6 +7,7 @@
  */
 namespace Model;
 // src/Model/ItemManager.php
+
 require __DIR__ . '/../../app/db.php';
 
 // récupération de tous les items
@@ -18,20 +19,20 @@ require __DIR__ . '/../../app/db.php';
 //    return $res->fetchAll();
 //}
 
-class ItemManager{
+class CategoryManager{
 
-    public function selectAllItems() :array
+    public function selectAllCategory() :array
     {
         $pdo = new \PDO(DSN, USER, PASS);
-        $query = "SELECT * FROM item";
+        $query = "SELECT * FROM category";
         $res = $pdo->query($query);
         return $res->fetchAll();
     }
 
-    public function selectOneItem(int $id) : array
+    public function selectOneCategory(int $id) : array
     {
         $pdo = new \PDO(DSN, USER, PASS);
-        $query = "SELECT * FROM item WHERE id = :id";
+        $query = "SELECT * FROM category WHERE id = :id";
         $statement = $pdo->prepare($query);
         $statement->bindValue(':id', $id, \PDO::PARAM_INT);
         $statement->execute();
