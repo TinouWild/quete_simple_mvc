@@ -26,6 +26,10 @@ class ComposerStaticInit52f929576089c07e8a05a9eed122a725
         array (
             'FastRoute\\' => 10,
         ),
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -45,6 +49,10 @@ class ComposerStaticInit52f929576089c07e8a05a9eed122a725
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
         ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
+        ),
     );
 
     public static $fallbackDirsPsr4 = array (
@@ -62,6 +70,8 @@ class ComposerStaticInit52f929576089c07e8a05a9eed122a725
     );
 
     public static $classMap = array (
+        'App\\Connection' => __DIR__ . '/../..' . '/app/Connection.php',
+        'Controller\\AbstractController' => __DIR__ . '/../..' . '/src/Controller/AbstractController.php',
         'Controller\\CategoryController' => __DIR__ . '/../..' . '/src/Controller/CategoryController.php',
         'Controller\\ItemController' => __DIR__ . '/../..' . '/src/Controller/ItemController.php',
         'FastRoute\\BadRouteException' => __DIR__ . '/..' . '/nikic/fast-route/src/BadRouteException.php',
@@ -81,7 +91,10 @@ class ComposerStaticInit52f929576089c07e8a05a9eed122a725
         'FastRoute\\RouteCollector' => __DIR__ . '/..' . '/nikic/fast-route/src/RouteCollector.php',
         'FastRoute\\RouteParser' => __DIR__ . '/..' . '/nikic/fast-route/src/RouteParser.php',
         'FastRoute\\RouteParser\\Std' => __DIR__ . '/..' . '/nikic/fast-route/src/RouteParser/Std.php',
+        'Model\\AbstractManager' => __DIR__ . '/../..' . '/src/Model/AbstractManager.php',
+        'Model\\Category' => __DIR__ . '/../..' . '/src/Model/Category.php',
         'Model\\CategoryManager' => __DIR__ . '/../..' . '/src/Model/CategoryManager.php',
+        'Model\\Item' => __DIR__ . '/../..' . '/src/Model/Item.php',
         'Model\\ItemManager' => __DIR__ . '/../..' . '/src/Model/ItemManager.php',
         'Symfony\\Polyfill\\Ctype\\Ctype' => __DIR__ . '/..' . '/symfony/polyfill-ctype/Ctype.php',
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',

@@ -6,6 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Connection' => $baseDir . '/app/Connection.php',
+    'Controller\\AbstractController' => $baseDir . '/src/Controller/AbstractController.php',
     'Controller\\CategoryController' => $baseDir . '/src/Controller/CategoryController.php',
     'Controller\\ItemController' => $baseDir . '/src/Controller/ItemController.php',
     'FastRoute\\BadRouteException' => $vendorDir . '/nikic/fast-route/src/BadRouteException.php',
@@ -25,7 +27,10 @@ return array(
     'FastRoute\\RouteCollector' => $vendorDir . '/nikic/fast-route/src/RouteCollector.php',
     'FastRoute\\RouteParser' => $vendorDir . '/nikic/fast-route/src/RouteParser.php',
     'FastRoute\\RouteParser\\Std' => $vendorDir . '/nikic/fast-route/src/RouteParser/Std.php',
+    'Model\\AbstractManager' => $baseDir . '/src/Model/AbstractManager.php',
+    'Model\\Category' => $baseDir . '/src/Model/Category.php',
     'Model\\CategoryManager' => $baseDir . '/src/Model/CategoryManager.php',
+    'Model\\Item' => $baseDir . '/src/Model/Item.php',
     'Model\\ItemManager' => $baseDir . '/src/Model/ItemManager.php',
     'Symfony\\Polyfill\\Ctype\\Ctype' => $vendorDir . '/symfony/polyfill-ctype/Ctype.php',
     'Symfony\\Polyfill\\Mbstring\\Mbstring' => $vendorDir . '/symfony/polyfill-mbstring/Mbstring.php',

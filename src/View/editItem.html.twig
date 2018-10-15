@@ -1,0 +1,13 @@
+{% extends 'layout.html.twig' %}
+{% block title %}Editer un item{% endblock %}
+
+{% block content %}
+<main>
+    <h1>Item {{ item.title }}</h1>
+    <form method="post">
+        <input type="text" name="title" value="{{ item.title }}">
+        <input type="submit" name="modifier" value="editer"><br>
+    </form><br>
+    <a href='/'>Back to list</a>
+</main>
+{% endblock %}

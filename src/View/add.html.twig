@@ -1,0 +1,11 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Ajouter un item{% endblock %}
+
+{% block content %}
+    <p>Ajouter un item :</p>
+<form method="post">
+    <input type="text" name="title">
+    <input type="submit" name="send" value="Ajouter">
+</form>
+{% endblock %}
