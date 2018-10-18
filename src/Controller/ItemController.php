@@ -69,13 +69,15 @@ class ItemController extends AbstractController
         $itemManager = new Model\ItemManager($this->pdo);
         $item = $itemManager->selectOneById($id);
 
-        if (@$_POST['delete'] == 'Supprimer')
+        if (!empty($_POST))
         {
             $item->setTitle($_POST['title']);
-            $itemManager->update($item);
+            $itemManager->delete($item);
+            header( 'Location: /');
+            exit;
         }
 
-        return $this->twig->render('deleteItem.html.twig', ['item' => $item]);
+        return $this->twig->render('deleteitem.html.twig', ['item' => $item]);
 
     }
 

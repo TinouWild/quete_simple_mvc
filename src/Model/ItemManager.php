@@ -29,7 +29,7 @@ class ItemManager extends AbstractManager
     public function update(Item $item)
     {
         $statement = $this->pdo->prepare("UPDATE " . self::TABLE . " SET title = :title WHERE id = :id");
-        $statement->bindValue('nom', $item->getTitle(), \PDO::PARAM_STR);
+        $statement->bindValue('title', $item->getTitle(), \PDO::PARAM_STR);
         $statement->bindValue('id', $item->getId(), \PDO::PARAM_INT);
         return $statement->execute();
     }
